@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ body{
+    background-image: url(../images/new.jpg);
+    background-size: cover;
+ }
+
+/* Navbar */
+.navbar{
+    justify-content: right;
+    display: flex;
+   
+    /* align-items: center; */
+    background-color: rgba(119, 106, 106, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 30px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(191, 74, 74);
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: rgb(225, 101, 101);
+    color: black;
+    box-shadow: 0 0 10px rgb(236, 218, 222) ;
+
+}
+
+/* Left content */
+#home .box{
+    width: 49%;
+    float: left;
+    margin-left: 10px;
+    height: 19cm;
+    padding: 10px;
+    /* border: solid black; */
+    
+}
+
+#name{
+    text-align: center;
+    margin-top: 50px;
+    font-family:century ;
+}
+.box .image-name{
+    /* border: 1px solid black; */
+    background-image: url(../images/wp4930337.jpg);
+    height: 550px;
+    width: 380px;
+    margin-left: 420px;
+    margin-right:28%;
+    margin-top: 100px;
+    
+    box-shadow: 0 0 40px rgba(13, 13, 13, 0.8);
+
+}
+#image{
+  
+    
+   margin-top: 30px; 
+   margin-left: 115px; 
+   width: 150px;
+   height: 230px; 
+   overflow: hidden; 
+   border-radius: 35%;
+   border: 1px solid rgb(245, 131, 131);
+   transition: all 0.5s ease-in-out; 
+
+}
+
+
+#image:hover{
+   box-shadow: 0 0 10px rgb(150, 31, 57) ;
+}
+/* Right content */
+#who{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+}
+#who h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+   
+}
+    
+#who h1 span{
+    color: rgb(218, 27, 59);
+}
+#am h2{
+    font-weight: 600;
+}
+/* About page */
+#about{
+    background-image: url(../images/fini.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px;
+    border: solid rgb(211, 106, 106);
+    height: 1100px; 
+    font-family: 'poppins',sans-serif;
+}
+#about h1{
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: popins sans-serif;
+}
+#education{
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+}
+#education h1{
+    margin: 60px;
+    text-align: center;
+    
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.boxa{
+    
+    height: 170px;
+    width: 500px;
+    background-color: rgba(83, 2, 2, 0.1);
+    border-radius: 20px;
+    box-shadow: black;
+    margin: 20px;
+    padding: 20px;
+   
+}
+.boxa:hover{
+    box-shadow: 0 0 10px rgb(150, 31, 57) ;
+}
+.boxa h2{
+    color: rgb(219, 48, 70);
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.boxa p{
+    color: rgb(15, 13, 13);
+    font-size: 1.1rem;
+   
+}
+.skill {
+    /* margin: 1px; */
+    font-family: popins sans-serif;
+    color: #5f121f;
+    /* border: solid black; */
+   flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.container {
+ width: 55%; 
+ background-color: #ddd;
+ 
+
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 0px; 
+  padding-bottom: 0px; 
+  color: white;
+ 
+ 
+}
+
+.html {
+    width: 90%; background-color: #cd1937;
+} 
+.css {
+    width: 80%; background-color: #ce515c;
+} 
+
+.php {
+    width: 50%; background-color: #a96060;
+} 
+.js {
+    width: 10%; background-color: #f9877f;
+} 
+#s-skills{
+text-align: center;
+color: #5f121f;
+font-family: popins sans-serif;
+
+
+
+}
+#s-skills #test{
+    margin-left: 450px;
+    margin-top: 20px;
+   
+}
+#s-skills li{
+    margin: 3px;
+    padding: 8px;
+    text-align: left;
+    margin-left: 800px;
+    color: #a3112a;
+    /* border: solid ; */
+    box-shadow: 0 0 40px rgba(13, 13, 13, 0.8);
+}
+
+/* Project section */
+#projects{
+    /* background-image: url(../images/sim.jpg); */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    /* border: solid black; */
+    height: 800px;
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+    background-image: url(../images/pers.jpg);
+    background-size: cover;
+    font-family: popins sans-serif;
+}
+.row{
+    display: flex;
+    width: 40%;
+}
+.box1{
+    margin-top: 100px;
+    margin-left: 90px;
+    display: flex;
+    /* border: solid black; */
+    flex-direction: column;
+    font-family: popins sans-serif;
+    box-shadow: 0 0 40px rgba(13, 13, 13, 0.8);
+}
+.box1 h1{
+    padding-top: 20px;
+    color: rgb(113, 11, 47);
+}
+.box1 p{
+    width: 550px;
+    height: 350px;
+    text-align: justify;
+    padding: 40px; 
+    
+}
+#achievements{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 90px;
+    /* border: solid black; */
+    height: 800px;
+    text-align: center;
+    
+    background-image: url(../images/new.jpg);
+    background-size: cover;
+    font-family: 'poppins',sans-serif;
+    /* padding-top: 3px; */
+
+}
+#achieve li{
+    margin: 40px;
+    padding: 30px;
+    text-align: center;
+    /* margin-left: 800px; */
+    color: #a3112a;
+    /* border: solid ; */
+    
+    /* box-shadow: 0 0 10px rgb(150, 31, 57) ; */
+}
+
+/* Contact section */
+#contacts{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    /* border: solid black; */
+    height: 800px;
+    text-align: center;
+    font-family: 'poppins',sans-serif; 
+    background-image: url(../images/peach.jpg); 
+    background-size: cover;
+}
+#contacts h1{
+    font-size: x-large;
+    font-family: century;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline:none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(222, 62, 62);
+}
